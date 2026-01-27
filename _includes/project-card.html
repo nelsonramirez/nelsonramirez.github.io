@@ -1,0 +1,20 @@
+<pre class="project-item">
+  <a href="{{ project.url | relative_url }}">
+    <div class="project-media">
+      <img
+        src="{{ project.image | relative_url }}"
+        alt="{{ project.title }}"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="project-content">
+      <strong>{{ project.title }}</strong>
+      {% if project.excerpt %}
+        <span class="project-desc">
+          {{ project.excerpt | strip_html }}
+        </span>
+      {% endif %}
+    </div>
+  </a>
+</pre>

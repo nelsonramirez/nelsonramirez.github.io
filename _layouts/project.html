@@ -1,0 +1,34 @@
+---
+layout: list
+---
+
+<article class="project">
+
+  <header class="project-header">
+    <h1>{{ page.title }}</h1>
+
+    {% if page.stack %}
+      <p class="project-stack">{{ page.stack }}</p>
+    {% endif %}
+  </header>
+
+  {% if page.image %}
+    <img class="project-image"
+         src="{{ page.image }}"
+         alt="{{ page.title }} screenshot">
+  {% endif %}
+
+  <section class="project-content">
+    {{ content }}
+  </section>
+
+  <footer class="project-links">
+    {% if page.github %}
+      <a href="{{ page.github }}" target="_blank">GitHub</a>
+    {% endif %}
+    {% if page.demo %}
+      <a href="{{ page.demo }}" target="_blank">Live demo</a>
+    {% endif %}
+  </footer>
+
+</article>
