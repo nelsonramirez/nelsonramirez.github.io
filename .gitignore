@@ -33,6 +33,7 @@ nbproject
 node_modules
 package-lock.json
 .bundle/
+private
 vendor
 .sass-cache
 .jekyll-metadata

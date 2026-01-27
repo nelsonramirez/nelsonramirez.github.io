@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages (using hydejack theme)
+name: Deploy jekyll to GH Pages (Hydejack theme)
 
 on:
   # Runs on pushes targeting the default branch
