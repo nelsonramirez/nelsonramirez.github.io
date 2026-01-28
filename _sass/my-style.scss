@@ -1,3 +1,6 @@
+@import "components/projects-grid";
+@import "components/project-card";
+
 .dl-table {
   a {
     @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {

@@ -1,20 +1,33 @@
 <pre class="project-item">
   <a href="{{ project.url | relative_url }}">
+
+    {% if project.image %}
     <div class="project-media">
       <img
-        src="{{ project.image | relative_url }}"
+        src="{{ project.image.path | relative_url }}"
+        {% if project.image.srcset %}
+        srcset="
+          {% for size in project.image.srcset %}
+            {{ size[1] | relative_url }} {{ size[0] }},
+          {% endfor %}
+        "
+        {% endif %}
+        sizes="(max-width: 700px) 100vw, 33vw"
         alt="{{ project.title }}"
         loading="lazy"
       />
     </div>
+    {% endif %}
 
     <div class="project-content">
       <strong>{{ project.title }}</strong>
-      {% if project.excerpt %}
+
+      {% if project.description %}
         <span class="project-desc">
-          {{ project.excerpt | strip_html }}
+          {{ project.description | strip_html }}
         </span>
       {% endif %}
     </div>
+
   </a>
 </pre>

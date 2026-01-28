@@ -1,0 +1,55 @@
+.project-item {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  padding: 0;
+
+  border-radius: 16px;
+  background: #ffffff;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .project-media {
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .project-content {
+    padding: 1rem 1.1rem 1.2rem;
+
+    strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-desc {
+      display: block;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      opacity: 0.85;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  }
+}

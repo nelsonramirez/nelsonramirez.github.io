@@ -1,34 +1,42 @@
 ---
-layout: list
+layout: base
 ---
 
 <article class="project">
 
   <header class="project-header">
     <h1>{{ page.title }}</h1>
-
-    {% if page.stack %}
-      <p class="project-stack">{{ page.stack }}</p>
-    {% endif %}
+    <p class="project-description">{{ page.description }}</p>
   </header>
 
   {% if page.image %}
-    <img class="project-image"
-         src="{{ page.image }}"
-         alt="{{ page.title }} screenshot">
+  <figure class="project-hero">
+    <img
+      src="{{ page.image.path }}"
+      srcset="
+        {% for size in page.image.srcset %}
+          {{ size[1] }} {{ size[0] }},
+        {% endfor %}
+      "
+      sizes="(max-width: 960px) 100vw, 960px"
+      alt="{{ page.title }}"
+    >
+    {% if page.caption %}
+      <figcaption>{{ page.caption }}</figcaption>
+    {% endif %}
+  </figure>
   {% endif %}
+
+  <section class="project-links">
+    {% for link in page.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">
+        {{ link.title }}
+      </a>
+    {% endfor %}
+  </section>
 
   <section class="project-content">
     {{ content }}
   </section>
-
-  <footer class="project-links">
-    {% if page.github %}
-      <a href="{{ page.github }}" target="_blank">GitHub</a>
-    {% endif %}
-    {% if page.demo %}
-      <a href="{{ page.demo }}" target="_blank">Live demo</a>
-    {% endif %}
-  </footer>
 
 </article>

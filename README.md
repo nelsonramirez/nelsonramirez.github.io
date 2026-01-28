@@ -1,20 +1,36 @@
-# Hydejack Starter Kit
+# Personal Portfolio
+### *Jekyll & GitHub Pages*
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+This repository contains the source code of my personal and professional website,
+built with **Jekyll** and deployed using **GitHub Pages**.
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+The site showcases selected projects, professional experience and personal information, with a focus on clarity, performance and maintainability.
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+Currently only in french.
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
+---
 
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+## ✨ Features
+
+- Multipage navigation (Home, Portfolio, Project pages)
+- Dynamic project listing powered by Jekyll collections
+- Individual project pages generated from Markdown
+- Responsive masonry-style project grid (CSS only, no JavaScript)
+- Minimalist design with a light color palette
+- Optimized images with `srcset`
+- Clean, modular SCSS architecture
+
+---
+
+## 🛠 Tech Stack
+
+- **Jekyll** — static site generator
+- **GitHub Pages** — hosting & deployment
+- **SCSS (Sass)** — styling
+- **Markdown** — content
+- **Liquid** — templating
+
+---
+
+### <sub> *© NelsonR.* 🇻🇪 </sub>
+
