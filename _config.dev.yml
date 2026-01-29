@@ -1,0 +1,5 @@
+# Theme
+# ---------------------------------------------------------------------------------------
+
+# This will use the gem `jekyll-theme-hydejack`, as defined in the sibling `Gemfile`.
+theme: jekyll-theme-hydejack
