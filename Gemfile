@@ -10,6 +10,8 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.3"
 
+gem "jekyll-sass-converter", "~> 2.1" 
+
 gem "jekyll-theme-hydejack", "~> 9.1"
 
 # If you are part of the ["Customers" team](https://github.com/orgs/hydecorp/teams/pro-customers), 

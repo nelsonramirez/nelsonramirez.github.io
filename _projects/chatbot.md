@@ -3,11 +3,11 @@ layout:      project
 title:       Bill-e Bot
 date:        2022-01-01
 image:
-  path:       /assets/img/projects/bill-e/cover.jpg
+  path:       /assets/img/projects/bill-e/cover.png
   srcset:
-    1920w:   /assets/img/projects/bill-e.jpg
-    960w:    /assets/img/projects/bill-e@0,5x.jpg
-    480w:    /assets/img/projects/bill-e@0,25x.jpg
+    1920w:   /assets/img/projects/bill-e/bill-e.jpg
+    960w:    /assets/img/projects/bill-e/bill-e@0,5x.jpg
+    480w:    /assets/img/projects/bill-e/bill-e@0,25x.jpg
 caption:     Espace client digital ENGIE pour les entreprises et collectivités.
 description: >
   Bill-e est l’espace client web d’ENGIE dédié aux entreprises et collectivités,
