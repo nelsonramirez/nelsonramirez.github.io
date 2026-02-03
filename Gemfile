@@ -8,9 +8,9 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3"
+# gem "jekyll", "~> 4.3"
 
-gem "jekyll-sass-converter", "~> 2.1" 
+# gem "jekyll-sass-converter", "~> 2.1" 
 
 gem "jekyll-theme-hydejack", "~> 9.1"
 
@@ -55,7 +55,8 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-titles-from-headings"
   gem "jekyll-include-cache"
-  gem "jekyll-remote-theme"
+  # gem "jekyll-remote-theme"
+  gem "github-pages"
 
   # Non-Github Pages plugins:
   gem "jekyll-last-modified-at"
